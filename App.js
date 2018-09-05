@@ -1,23 +1,29 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { YellowBox } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
-}
+import Home from './Home';
+import SearchResults from './SearchResults';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+YellowBox.ignoreWarnings([
+  'Warning: componentWillMount is depricated',
+  'Warning: componentWillReceiveProps is depricated'
+]);
+
+export default createStackNavigator({
+  home: {
+    screen: Home,
+    navigationOptions: () => ({
+      title: 'WeatherApp'
+    })
   },
+  results: {
+    screen: SearchResults,
+    navigationOptions: () => ({
+      title: 'Results'
+    })
+  }
+},
+{
+  initialRouteName: 'home',
 });
