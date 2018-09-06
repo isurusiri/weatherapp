@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     card: {
@@ -60,24 +60,16 @@ class WeatherCard extends Component {
             <View style={styles.card}>
                 <View style={styles.weatherItemContainer}>
                     <View style={styles.weatherItem}>
-                        <View style={styles.weatherItemText}>{this.props.weatherItem.temperatureC}</View>
-                        <View style={styles.weatherItemLabel}>Temperature `C</View>
+                        <Text style={styles.weatherItemText}>{this.props.weatherItem.temperatureC}</Text>
+                        <Text style={styles.weatherItemLabel}>Temperature `C</Text>
                     </View>
                     <View style={styles.weatherItem}>
-                        <View style={styles.weatherItemText}>{this.props.weatherItem.cloudinessPercent}%</View>
-                        <View style={styles.weatherItemLabel}>Cloudiness</View>
+                        <Text style={styles.weatherItemText}>{this.props.weatherItem.cloudinessPercent}</Text>
+                        <Text style={styles.weatherItemLabel}>Cloudiness %</Text>
                     </View>
                     <View style={styles.weatherItem}>
-                        <View style={styles.weatherItemText}>{this.props.weatherItem.humidityPercent}%</View>
-                        <View style={styles.weatherItemLabel}>Humidity</View>
-                    </View>
-                </View>
-                <View style={styles.cardHeader}>
-                    <View style={styles.city}>
-                        {this.props.weatherItem.city}
-                    </View>
-                    <View style={styles.date}>
-                        {this.props.weatherItem.date}
+                        <Text style={styles.weatherItemText}>{this.props.weatherItem.humidityPercent}</Text>
+                        <Text style={styles.weatherItemLabel}>Humidity %</Text>
                     </View>
                 </View>
             </View>
