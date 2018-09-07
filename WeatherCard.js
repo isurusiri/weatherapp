@@ -43,9 +43,23 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: '#bdbdbd',
         width: '30%',
-        textAlign: 'right'
+        textAlign: 'right',
+        paddingRight: 500
     },
     city: {
+        fontSize: 15,
+        fontWeight: '300',
+        marginLeft: 7,
+        textAlign: 'left'
+    },
+    date: {
+        fontWeight: '200',
+        fontSize: 15,
+        color: '#bdbdbd',
+        width: '60%',
+        textAlign: 'right'
+    },
+    title: {
         fontSize: 15,
         fontWeight: '300',
         marginLeft: 7,
@@ -54,10 +68,14 @@ const styles = StyleSheet.create({
 });
 
 class WeatherCard extends Component {
-    
+    //TODO: City and date!
     render() {
         return (
             <View style={styles.card}>
+            <View style={styles.cardHeader}>
+                <Text style={styles.title}>{this.props.weatherItem.city}</Text>
+                <Text style={styles.date}>{this.props.weatherItem.date}</Text>
+            </View>
                 <View style={styles.weatherItemContainer}>
                     <View style={styles.weatherItem}>
                         <Text style={styles.weatherItemText}>{this.props.weatherItem.temperatureC}</Text>
