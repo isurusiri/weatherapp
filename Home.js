@@ -61,7 +61,7 @@ class Home extends Component {
                 date: currentDate
             }
         ))})
-        this.selectWeatherImage(weatherDatum.weather.temperatureC, weatherDatum.weather.cloudinessPercent, weatherDatum.weather.humidityPercent);
+        this.selectWeatherImage(this.state.weatherData[0].temperatureC, this.state.weatherData[0].cloudinessPercent, this.state.weatherData[0].humidityPercent);
     });
     }
 
