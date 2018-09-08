@@ -3,6 +3,7 @@ import { FlatList, Text, View, StyleSheet, Image } from 'react-native';
 
 import { getWeather } from './api';
 import WeatherCard from './WeatherCard';
+import { getCurrentDateAndMonth } from './dateTimeFormatter';
 
 let testData = [
     {
@@ -35,13 +36,14 @@ class Home extends Component {
     }
 
     componentDidMount() {
+        let currentDate = getCurrentDateAndMonth();
         getWeather(testData).then(weatherData => this.setState({weatherData: weatherData.locations.map(weatherDatum => (
             {
                 temperatureC: weatherDatum.weather.temperatureC,
                 cloudinessPercent: weatherDatum.weather.cloudinessPercent,
                 humidityPercent: weatherDatum.weather.humidityPercent,
                 city: 'Colombo, Sri Lanka',
-                date: 'SEP 6'
+                date: currentDate
             }
         ))}));
     }
