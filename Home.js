@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FlatList, Text, View, StyleSheet, Image } from 'react-native';
 
-import { getWeather } from './api';
+import { getWeather, getLocationByGeoCoordinates } from './api';
 import WeatherCard from './WeatherCard';
 import { getCurrentDateAndMonth } from './dateTimeFormatter';
 
@@ -51,19 +51,34 @@ class Home extends Component {
 
     componentDidMount() {
         let currentDate = getCurrentDateAndMonth();
+        let notUpdated = true;
         getWeather(testData).then(weatherData => {
-            this.setState({weatherData: weatherData.locations.map(weatherDatum => (
-            {
-                temperatureC: weatherDatum.weather.temperatureC,
-                cloudinessPercent: weatherDatum.weather.cloudinessPercent,
-                humidityPercent: weatherDatum.weather.humidityPercent,
-                city: 'Colombo, Sri Lanka',
-                date: currentDate
+            getLocationByGeoCoordinates(testData[0].lat, testData[0].lng).then(geoLocationData => {
+                notUpdated = false;
+                this.setState({weatherData: weatherData.locations.map(weatherDatum => (
+                    {
+                        temperatureC: weatherDatum.weather.temperatureC,
+                        cloudinessPercent: weatherDatum.weather.cloudinessPercent,
+                        humidityPercent: weatherDatum.weather.humidityPercent,
+                        city: geoLocationData.results[0].components.city + ', ' + geoLocationData.results[0].components.country,
+                        date: currentDate
+                    }
+                ))}
+            );
+            if (notUpdated) {
+                this.setState({weatherData: weatherData.locations.map(weatherDatum => (
+                    {
+                        temperatureC: weatherDatum.weather.temperatureC,
+                        cloudinessPercent: weatherDatum.weather.cloudinessPercent,
+                        humidityPercent: weatherDatum.weather.humidityPercent,
+                        city: 'The Universe',
+                        date: currentDate
+                    }
+                ))});  
             }
-        ))})
-        this.selectWeatherImage(this.state.weatherData[0].temperatureC, this.state.weatherData[0].cloudinessPercent, this.state.weatherData[0].humidityPercent);
-    });
-    }
+        })
+        this.selectWeatherImage(this.state.weatherData[0].temperatureC, this.state.weatherData[0].cloudinessPercent, this.state.weatherData[0].humidityPercent);   
+    })};
 
     render() {
 
