@@ -26,7 +26,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#F3F3F3'
     },
     animation: {
-        alignSelf: 'center'
+        alignSelf: 'center',
+        height: 250,
+        width: 350
     }
 });
 
@@ -34,19 +36,7 @@ class Home extends Component {
 
     state = {
         weatherData: [],
-        imageSource: require('./resources/cloudy.png')
-    }
-
-    selectWeatherImage = (temperature, cloudiness, humidity) => {
-        if (temperature >= 27 && cloudiness >= 40) {
-            this.setState({imageSource: require('./resources/cloudy-sunny.png') });
-        } else if (temperature >= 0 && temperature < 27) {
-            this.setState({imageSource: require('./resources/cloudy.png') });
-        } else if (temperature <= 0) {
-            this.setState({imageSource: require('./resources/snowy.png') });
-        } else if (cloudiness > 50 && humidity > 50) {
-            this.setState({imageSource: require('./resources/rainy.png') });
-        }
+        imageSource: require('./resources/jacket.gif')
     }
 
     componentDidMount() {
@@ -60,7 +50,7 @@ class Home extends Component {
                         temperatureC: weatherDatum.weather.temperatureC,
                         cloudinessPercent: weatherDatum.weather.cloudinessPercent,
                         humidityPercent: weatherDatum.weather.humidityPercent,
-                        city: geoLocationData.results[0].components.city + ', ' + geoLocationData.results[0].components.country,
+                        city: (geoLocationData.results[0].components.city? geoLocationData.results[0].components.city : geoLocationData.results[0].components.town) + ', ' + geoLocationData.results[0].components.country,
                         date: currentDate
                     }
                 ))}
@@ -76,8 +66,7 @@ class Home extends Component {
                     }
                 ))});  
             }
-        })
-        this.selectWeatherImage(this.state.weatherData[0].temperatureC, this.state.weatherData[0].cloudinessPercent, this.state.weatherData[0].humidityPercent);   
+        }) 
     })};
 
     render() {
