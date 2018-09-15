@@ -36,14 +36,36 @@ class Home extends Component {
 
     state = {
         weatherData: [],
-        imageSource: require('./resources/jacket.gif')
+        imageSource: require('./resources/jacket.gif'),
+        location: {
+            latitude: null,
+            longitude: null,
+            error: null,
+        }
+    }
+
+    getGeoLocation() {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                this.setState(
+                    {
+                        location: {
+                            latitude: position.coords.latitude,
+                            longitude: position.coords.longitude,
+                            error: null
+                        }});
+            },
+            (error) => this.setState({location: { error: error.message}}),
+            { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 },
+        );
     }
 
     componentDidMount() {
         let currentDate = getCurrentDateAndMonth();
         let notUpdated = true;
+        this.getGeoLocation();
         getWeather(testData).then(weatherData => {
-            getLocationByGeoCoordinates(testData[0].lat, testData[0].lng).then(geoLocationData => {
+            getLocationByGeoCoordinates(this.state.location.latitude, this.state.location.longitude).then(geoLocationData => {
                 notUpdated = false;
                 this.setState({weatherData: weatherData.locations.map(weatherDatum => (
                     {
