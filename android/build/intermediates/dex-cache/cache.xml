@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_a3c82b6af9835c21c32cf3ebce8a8d3071bbf199.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_bc55bac0483ca45d97864747fb21263919945e8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_28c84a0efca089abf06a5ddb973787a2ae45f68b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_8f7bd261e7170aca972e43336e9fd99850ff9d18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_db7b6e48be448eb2d4e2be03c9276dcd2abbda01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isuru\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_99e7cb2df616eecb3c33190290d0e8ae63c3836c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_e7c6f5d6150ea86185287e4d0cc9e4fc443f7c49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_4d72fc61df280c754660f2b351267b12b9a5c27b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_359eea460c236d564b921ec3d4ca093f6ba90a0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_13549b9bb3c51779529c521f441afc4623ae6968.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isuru\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_42ed9279d24a50b09124b030844d6a978f636f48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_c81113706fa189ba3080a1ccc5090afd4097f769.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isuru\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_ee898559e2472df161ccf1b127275605cd451bf3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_d2f24408c14d6561a5ab48af254fb8d9b9c2dd32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isuru\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_ec7a2e8cdf25a8ab861860d64898a9753ef680a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_9bb8e85a413b9c7a38d6d3dad5af212e402d4b23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isuru\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_f416b9dfa5da65c6f9bad93b2152ea1ecda0f7fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.55.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e31331bdf6b5952badadbfc171f04b95c55d3b16">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.55.4_e42f9f23301b5115efdcf8dad3eef918f9fa25d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isuru\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_260178c47748109de06c4c76664ce88093a2f60a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isuru\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_06437a1c3e1a5ab92af633e8aa800e579417529b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\isuru\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Isuru\Projects\weatherapp\weatherapp\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_7568f783ee9529733878705305169289f02a7112.jar" />
+    </item>
+
+</items>
